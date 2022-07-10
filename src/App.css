@@ -8,7 +8,7 @@
 
 body {
   background: #05292E;
-  color: black;
+  color: white;
   
 }
 
@@ -62,6 +62,4 @@ button{
 	background: #afafaf;
 }
 
-.txtColor{
-  color: white;
-}
+

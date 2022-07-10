@@ -6,7 +6,7 @@ const HeaderImg = () => {
 
 
     return (
-        <div style={{backgroundImage: `url(${back})`, backgroundSize: "100%", backgroundPositionY: "center",}}>
+        <div style={{backgroundImage: `url(${back})`, backgroundSize: "100%", backgroundPositionY: "center"}}>
             <img src={front} alt="" style={{width: "100%", maxWidth: "500px"}} />
         </div>
     );

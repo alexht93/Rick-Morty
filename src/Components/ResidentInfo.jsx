@@ -20,7 +20,7 @@ const ResidentInfo = ({ resident }) => {
         <div className='col mb-4 '>
             <div className='card' style={ {minWidth: "200px"}}>
                 <img  src={residentInfo.image} alt=""/>
-                <div className='card-body status'>
+                <div className='card-body status' style={{backgroundColor: "#052226"}}>
                 
                     <h5 className='card-title'><b>Name:</b> {residentInfo.name}</h5>
                     <hr />

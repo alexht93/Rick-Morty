@@ -32,7 +32,7 @@ const Location = ({ placeholder}) => {
     if (location.residents?.length == 0){
         return(
             <>
-                <h1 className='txtColor mt-5' style= {{color: "red"}}>There are no habitants in this location.</h1>
+                <h1 className=' mt-5' style= {{color: "red"}}>There are no habitants in this location.</h1>
             </>
         )
     }
@@ -41,20 +41,20 @@ const Location = ({ placeholder}) => {
     return (
         <div>
            
-            <h1 className='txtColor'>Rick and Morty Wiki</h1>
+            <h1 >Rick and Morty Wiki</h1>
             <div >
             <input className='filtrar' type="text" placeholder={placeholder} value={searchLocation} 
             onChange={e => setSearchLocation(e.target.value)} onKeyDown={handleKeyDown} />
             <button onClick={searchId}>Search</button>
             </div>
             <div className='row'>
-                <div className="container">
-                    <div className="row txtColor">
+                <div className="container" >
+                    <div className="row" style={{backgroundColor: "#052226", padding: "10px", borderRadius: "5px"}}>
                         <h2><b>Nombre:</b> {location.name}</h2>
                         <div className="col mt-5">
                             <p><b>Type:</b> {location.type}</p>
                         </div>
-                        <div className="col txtColor mt-5">
+                        <div className="col  mt-5">
                             <p><b>Dimension:</b> {location.dimension}</p>
                         </div>
                       
@@ -62,7 +62,7 @@ const Location = ({ placeholder}) => {
                             <p><b>Population:</b> {location.residents?.length}</p>
                         </div>
                     </div>
-                    <h2 className='txtColor mt-5'>Residents</h2>
+                    <h2 className=' mt-5'>Residents</h2>
                     {population ()}
                     <div className='row  mt-5'>
                       {location.residents?.map(resident =>(
