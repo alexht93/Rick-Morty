@@ -9,17 +9,14 @@ function App() {
 
 
   return (
-    <>
-      <div className='containerBanner'>
+   <div className='App'>
+    <div className='containerBanner'>
         <img src="./src/assests/image 2.png" alt="" />
       </div>
-
-      <div className='container mt-5 App'>
-
-        <Location placeholder="Type a location Id..." />
-
-      </div>
-    </>
+        <div className='container mt-5'>
+      <Location placeholder="Type a location Id..." />
+    </div>
+   </div>
   )
 }
 
