@@ -18,7 +18,7 @@ const ResidentInfo = ({ resident }) => {
 
     return (
         <div className='col mb-4 '>
-            <div className='card' style={ {minWidth: "200px"}}>
+            <div className='card' style={ {minWidth: "100px", maxWidth: "300px"}}>
                 <img  src={residentInfo.image} alt=""/>
                 <div className='card-body status' style={{backgroundColor: "#052226"}}>
                 
@@ -26,7 +26,7 @@ const ResidentInfo = ({ resident }) => {
                     <hr />
                     <div className="status">
                     <span className={residentInfo.status}></span>
-                    <p> <b>Status:</b> {residentInfo.status} </p>
+                    <p> <b>Status:</b> {residentInfo.status}</p>
                     <p>  <b>Origin:</b> {residentInfo.origin?.name}</p>
                     <p><b>Episode appearances:</b> {residentInfo.episode?.length}</p>
                     </div>
