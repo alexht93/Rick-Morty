@@ -32,7 +32,7 @@ const Location = ({ placeholder}) => {
     if (location.residents?.length == 0){
         return(
             <>
-                <h1 className='txtColor mt-5'>There are no habitants in this location</h1>
+                <h1 className='txtColor mt-5' style= {{color: "red"}}>There are no habitants in this location.</h1>
             </>
         )
     }
@@ -50,7 +50,7 @@ const Location = ({ placeholder}) => {
             <div className='row'>
                 <div className="container">
                     <div className="row txtColor">
-                        <h2>{location.name}</h2>
+                        <h2><b>Nombre:</b> {location.name}</h2>
                         <div className="col mt-5">
                             <p><b>Type:</b> {location.type}</p>
                         </div>

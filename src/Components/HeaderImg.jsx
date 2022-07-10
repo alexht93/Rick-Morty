@@ -1,11 +1,12 @@
 import React from 'react';
+import front from "../assets/front.png"
 
 const HeaderImg = () => {
+
+
     return (
         <div>
-            <div className='containerBanner'>
-                <img src="./src/assests/image 2.png" alt="" />
-            </div>
+            <img src={front} alt="" />
         </div>
     );
 };
