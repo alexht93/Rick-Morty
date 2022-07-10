@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:wght@500&family=Dancing+Script:wght@500&family=Oxygen&family=Roboto&family=Rubik:wght@300;500&family=Ubuntu+Condensed&display=swap');
+
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #05292E;
+  color: black;
+  
+}
+
+.containerBanner{
+  display: flex;
+  justify-content: center;
+  background-image: url(../src/assests/image\ 3.png);
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cardHeight{
+  height: auto;
+}
+
+.filtrar {
+	width: 100%;
+	max-width: 60rem;
+  margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+input {
+  
+	height: 2rem;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0 1rem;
+	outline: var(--color-primary);
+	width: 100%;
+}
+
+button{
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.status span {
+	display: block;
+	height: 0.75rem;
+	width: 0.75rem;
+	border-radius: 50%;
+}
+.Alive {
+	background: #31a703;
+}
+.Dead {
+	background: #d34b4b;
+}
+.unknown {
+	background: #afafaf;
+}
+
+.txtColor{
+  color: white;
+}
